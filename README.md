@@ -1,10 +1,10 @@
-# cordova-file-storage.js
+# cordova-file-storage
 
 An easy way to read/write files in Cordova.
 
 ## Install
 
-Copy the [cordova-file-storage](./cordova-file-storage.js) into your project.
+Add the [cordova-file-storage.js](./cordova-file-storage.js) to your project.
 
 ## Usage
 
