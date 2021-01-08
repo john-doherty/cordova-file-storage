@@ -10,6 +10,7 @@ Copy the [cordova-file-storage](./cordova-file-storage.js) into your project.
 
 ## Usage
 
+```js
 // the object you want to save
 var objectToSave = { firstName: 'John', lastName: 'Doherty' };
 
@@ -27,12 +28,13 @@ fileStorage.write(filename, data).then(function(filePath) {
      // this executes if something went wrong
      console.warn(err);
 });
+```
 
 This will use external (unprotected storage) by default, set `useSandbox: true` to save files in a protected location where users and external app are unable to access them.
 
 ## Star the repo
 
-If you find this useful, please star the repo. It helps me priorities which open source projects issues I should resolve first.
+If you find this useful, please star the repo. It helps me priorities which open source bug fixes.
 
 ## History
 
