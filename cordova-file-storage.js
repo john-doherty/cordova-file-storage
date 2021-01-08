@@ -1,3 +1,10 @@
+/*!
+ * cordova-file-storage - v1.0.0
+ * An easy way to read/write files in Cordova
+ * https://github.com/john-doherty/cordova-file-storage
+ * @author John Doherty <www.johndoherty.info>
+ * @license MIT
+ */
 var fileStorage = {
 
     /**
