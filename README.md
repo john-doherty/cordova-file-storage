@@ -1,7 +1,5 @@
 # cordova-file-storage.js
 
-[![License: MIT](https://img.shields.io/badge/License-ISC-informational.svg)](https://opensource.org/licenses/ISC)
-
 An easy way to read/write files in Cordova.
 
 ## Install
