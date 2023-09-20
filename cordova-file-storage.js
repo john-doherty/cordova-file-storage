@@ -16,6 +16,8 @@ var fileStorage = {
      */
     write: function (name, data, useSandbox) {
 
+        if (!window.cordova) return Promise.reject('cordova not found');
+
         var nameParts = name.split('/');
         var nameIndex = 0;
         var dir = (useSandbox) ? cordova.file.dataDirectory : cordova.file.externalDataDirectory;
@@ -76,6 +78,8 @@ var fileStorage = {
      */
     read: function (name, useSandbox) {
 
+        if (!window.cordova) return Promise.reject('cordova not found');
+
         var dir = (useSandbox) ? cordova.file.dataDirectory : cordova.file.externalDataDirectory;
 
         return new Promise(function (resolve, reject) {
@@ -113,6 +117,8 @@ var fileStorage = {
      */
     removeFile: function (name, useSandbox) {
 
+        if (!window.cordova) return Promise.reject('cordova not found');
+
         var dir = (useSandbox) ? cordova.file.dataDirectory : cordova.file.externalDataDirectory;
 
         return new Promise(function (resolve, reject) {
@@ -138,6 +144,8 @@ var fileStorage = {
      * @returns {Promise} .then is executed if successful otherwise .catch with error message
      */
     removeDirectory: function (name, useSandbox) {
+
+        if (!window.cordova) return Promise.reject('cordova not found');
 
         var dir = (useSandbox) ? cordova.file.dataDirectory : cordova.file.externalDataDirectory;
 
